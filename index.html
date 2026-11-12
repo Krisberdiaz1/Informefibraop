@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Informe UNEFA - Fibra Óptica</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ================= PORTADA ================= -->
+  <section class="hoja portada">
+    <header class="portada-logos">
+      <img src="Logo-Unefa.png" alt="Logo UNEFA Izquierda">
+      <img src="Logo-Unefa.png" alt="Logo UNEFA Derecha">
+    </header>
+
+    <div class="portada-institucional">
+      <p>REPÚBLICA BOLIVARIANA DE VENEZUELA</p>
+      <p>MINISTERIO DEL PODER POPULAR PARA LA DEFENSA</p>
+      <p>UNIVERSIDAD NACIONAL EXPERIMENTAL POLITÉCNICA</p>
+      <p>DE LA FUERZA ARMADA NACIONAL</p>
+      <p>UNEFA - NÚCLEO GUÁRICO</p>
+      <p>INGENIERÍA DE SISTEMAS - VIII SEMESTRE</p>
+    </div>
+
+    <div class="portada-titulo">
+      <h1>FIBRA ÓPTICA</h1>
+    </div>
+
+    <div class="portada-firmas">
+      <div class="firma-izq">
+        <p><strong>Profesor:</strong></p>
+        <p>Raul Blanco</p>
+      </div>
+      <div class="firma-der">
+        <p><strong>Bachiller:</strong></p>
+        <p>Krisber Diaz</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTENIDO ================= -->
+  <main class="contenido">
+
+    <!-- HOJA 1 -->
+    <section class="hoja pagina">
+      <p class="sangria">
+        La fibra óptica es un medio de transmisión de datos que utiliza hilos de vidrio o plástico muy finos para guiar pulsos de luz. Constituye la base de las telecomunicaciones modernas y de las redes de alta velocidad, siendo el soporte físico sobre el que operan múltiples protocolos de comunicación.
+      </p>
+
+      <h2>Principio de Funcionamiento</h2>
+      <p class="sangria">
+        El funcionamiento se basa en el fenómeno de reflexión total interna. El núcleo de la fibra posee un índice de refracción mayor que el revestimiento que lo rodea. Cuando la luz viaja por el núcleo y alcanza la pared con un ángulo suficientemente rasante, se refleja hacia el interior en lugar de escapar, quedando atrapada y guiada a lo largo del cable.
+      </p>
+
+      <h2>Tipos de Fibra Óptica</h2>
+
+      <h3>Fibra Monomodo (SMF)</h3>
+      <ul>
+        <li><strong>Núcleo:</strong> muy delgado (~9 µm)</li>
+        <li><strong>Trayectoria:</strong> un solo camino para la luz</li>
+        <li><strong>Ventajas:</strong> mínima atenuación y dispersión; ideal para larga distancia (decenas de km) y altas velocidades</li>
+        <li><strong>Desventajas:</strong> requiere láseres más costosos y alineación precisa</li>
+      </ul>
+
+      <h3>Fibra Multimodo (MMF)</h3>
+      <ul>
+        <li><strong>Núcleo:</strong> más ancho (50 o 62.5 µm)</li>
+        <li><strong>Trayectoria:</strong> múltiples caminos de luz</li>
+        <li><strong>Ventajas:</strong> componentes ópticos más económicos (LEDs/VCSELs) y conectores sencillos</li>
+        <li><strong>Desventajas:</strong> dispersión modal que limita la distancia (cientos de metros)</li>
+        <li><strong>Aplicación:</strong> centros de datos y redes LAN</li>
+      </ul>
+
+      <h2>Ventajas frente al Cobre</h2>
+      <ul>
+        <li><strong>Ancho de banda enorme:</strong> capacidad de terabits por segundo con WDM</li>
+        <li><strong>Bajas pérdidas:</strong> permite distancias de decenas de km sin repetidores</li>
+        <li><strong>Inmunidad a interferencias electromagnéticas (EMI)</strong></li>
+        <li><strong>Seguridad:</strong> difícil de interceptar sin detectarse</li>
+        <li><strong>Ligereza y menor diámetro</strong> que cables de cobre equivalentes</li>
+      </ul>
+    </section>
+
+    <!-- HOJA 2 -->
+    <section class="hoja pagina">
+      <h2>Protocolos y Estándares Asociados</h2>
+
+      <h3>Capa Física</h3>
+      <ul>
+        <li><strong>WDM (Multiplexación por División de Longitud de Onda):</strong> permite enviar múltiples señales simultáneas por una sola fibra usando diferentes longitudes de onda. El estándar ITU-T G.694.1 define el espaciado de canales para DWDM.</li>
+        <li><strong>Ethernet sobre Fibra (IEEE 802.3):</strong>
+          <ul>
+            <li><em>1000Base-SX:</em> fibra multimodo, 850 nm, distancias cortas (~500 m)</li>
+            <li><em>1000Base-LX:</em> fibra monomodo/multimodo, 1310 nm, distancias mayores (~3 km en monomodo)</li>
+          </ul>
+        </li>
+        <li><strong>Video sobre Fibra (ITU-T J.185/J.186):</strong> distribución de TV por cable; J.186 usa modulación de intensidad directa y J.185 modulación de frecuencia previa.</li>
+      </ul>
+
+      <h3>Capa Superior</h3>
+      <ul>
+        <li><strong>SDH/SONET y OTN:</strong> estándares de transporte en telecomunicaciones; OTN ha reemplazado en gran medida a SDH/SONET por su eficiencia con tráfico IP y conmutación por longitud de onda.</li>
+        <li><strong>TCP/IP:</strong> protocolo dominante en redes de fibra modernas, especialmente en accesos FTTH e IPTV.</li>
+        <li><strong>Fibre Channel (FC):</strong> protocolo de red de alta velocidad para redes de almacenamiento (SAN).</li>
+      </ul>
+
+      <h2>Aplicaciones Típicas</h2>
+      <ul>
+        <li><strong>Telecomunicaciones:</strong> backbone de Internet y enlaces intercontinentales submarinos</li>
+        <li><strong>FTTH (Fibra hasta el Hogar):</strong> banda ancha residencial</li>
+        <li><strong>Centros de datos:</strong> interconexión de alta velocidad (Ethernet, Fibre Channel)</li>
+        <li><strong>Redes industriales y sensores:</strong> ambientes con alta EMI o sensado distribuido</li>
+        <li><strong>Medicina:</strong> endoscopios, iluminación y sensores</li>
+      </ul>
+    </section>
+
+    <!-- HOJA 3 -->
+    <section class="hoja pagina">
+      <h2>Conectores y Empalmes</h2>
+      <ul>
+        <li><strong>Conectores comunes:</strong> LC, SC, ST, FC (LC y SC son los más usados en datacom)</li>
+        <li><strong>Empalmes:</strong> por fusión (arco eléctrico, baja pérdida) o mecánicos</li>
+        <li><strong>Pulido:</strong> PC, UPC (contacto físico) y APC (ángulo de 8°, menor reflectancia, usado en PON y CATV)</li>
+      </ul>
+
+      <h2>Parámetros Clave</h2>
+      <ul>
+        <li><strong>Atenuación:</strong> pérdida de potencia por km (dB/km). En 1310 nm ~0.35 dB/km; en 1550 nm ~0.2 dB/km (monomodo)</li>
+        <li><strong>Dispersión:</strong> ensanchamiento del pulso que limita velocidad y distancia</li>
+        <li><strong>Ventanas de transmisión:</strong> 850 nm (multimodo), 1310 nm y 1550 nm (monomodo), y banda C para DWDM</li>
+      </ul>
+
+      <h2>Conclusiones</h2>
+      <p class="sangria">
+        La fibra óptica se consolida como el medio de transmisión preferente en redes modernas gracias a su elevado ancho de banda, bajas pérdidas e inmunidad a interferencias. La elección entre fibra monomodo y multimodo depende de la distancia y el costo de los componentes, mientras que tecnologías como WDM y OTN permiten maximizar la capacidad de la infraestructura existente. Su adopción en telecomunicaciones, centros de datos y accesos FTTH la posiciona como pilar fundamental de la sociedad digital.
+      </p>
+    </section>
+
+    <!-- HOJA 4: REFERENCIAS -->
+    <section class="hoja pagina referencias">
+      <h2 class="referencias-titulo">REFERENCIAS</h2>
+
+      <p class="ref-item">
+        Agrawal, G. P. (2019). <em>Fiber-optic communication systems</em> (5.ª ed.). Wiley.
+      </p>
+
+      <p class="ref-item">
+        Keiser, G. (2021). <em>Optical fiber communications</em> (6.ª ed.). McGraw-Hill Education.
+      </p>
+
+      <p class="ref-item">
+        International Telecommunication Union. (2020). <em>ITU-T G.694.1: Spectral grids for WDM applications: DWDM frequency grid</em>. ITU.
+      </p>
+
+      <p class="ref-item">
+        IEEE. (2018). <em>IEEE Standard for Ethernet (IEEE Std 802.3-2018)</em>. Institute of Electrical and Electronics Engineers.
+      </p>
+
+      <p class="ref-item">
+        Junior, J. C., &amp; Spiekman, L. (Eds.). (2019). <em>FTTH handbook</em> (8.ª ed.). FTTH Council Europe.
+      </p>
+    </section>
+
+  </main>
+
+</body>
+</html>
